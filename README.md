@@ -80,14 +80,7 @@ We built a **Streamlit dashboard** (`dashboard/app.py`) that wraps the trained m
 **How it works under the hood:**  
 The dashboard retrains the same three model families on a synthetic dataset that mirrors the original credit statistics. It applies identical preprocessing (one‑hot encoding, scaling) and uses the same cost‑based evaluation. The default active model is the one that minimises **cost‑weighted misclassification** (5×FN + 1×FP) on the dashboard’s internal test set – which, consistent with the notebook, is **Logistic Regression**.
 
-**Run it locally:**  
-```bash
-cd dashboard
-pip install -r requirements.txt
-streamlit run app.py
-
-## References
-
+**References**
 **Dataset**
 
 Hofmann, H. (1994). Statlog (German Credit Data) [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5NC77
@@ -105,3 +98,12 @@ Zhang, W., et al. (2021). How to identify early defaults in online lending: A co
 **Credit scoring and model governance**
 
 Bussmann, N., et al. (2021). Employing explainable AI to optimize the return target function of a loan portfolio. *Frontiers in Artificial Intelligence*, 4. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8239154/
+
+
+**Run it locally:**  
+```bash
+cd dashboard
+pip install -r requirements.txt
+streamlit run app.py
+
+
