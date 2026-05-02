@@ -53,7 +53,7 @@ This notebook operationalises all three throughout: from class‑weight grids in
 
 ---
 
-## Notebook pipeline (technical overview)
+## Notebook pipeline
 
 | Step | Detail |
 |------|--------|
@@ -70,7 +70,7 @@ This notebook operationalises all three throughout: from class‑weight grids in
 
 ## Dashboard – interactive risk scoring
 
-We built a **Streamlit dashboard** (`dashboard/app.py`) that wraps the trained models into a tool a credit officer can use without writing code.
+We built a **Streamlit dashboard** that wraps the trained models into a tool a credit officer can use without writing code.
 
 **What it does:**  
 - **Single applicant assessment** – input loan amount, credit history, savings, age, etc. Instantly get probability of default (PD), risk tier (Low/Medium/High), and a recommended action (Approve / Review / Decline).  
