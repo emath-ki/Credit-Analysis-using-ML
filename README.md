@@ -7,6 +7,7 @@
 **Best model (by business cost):** Logistic Regression – lowest cost‑weighted misclassification on the test set.  
 **Best model (by recall):** Decision Tree – catches more actual defaults.
 
+Link to dashboard: https://credit-analysis-using-ml-emath.streamlit.app/
 The dashboard uses the **cost‑based champion** by default. The trade‑off is explained below.
 
 ---
