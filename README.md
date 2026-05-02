@@ -75,10 +75,10 @@ We built a **Streamlit dashboard** (`dashboard/app.py`) that wraps the trained m
 **What it does:**  
 - **Single applicant assessment** – input loan amount, credit history, savings, age, etc. Instantly get probability of default (PD), risk tier (Low/Medium/High), and a recommended action (Approve / Review / Decline).  
 - **Model performance tab** – see confusion matrices, ROC curves, feature importance, and per‑class metrics for all three models.  
-- **Batch analysis** – upload a CSV of applicants, score them all at once, download results.
+- **Batch analysis** – upload a CSV of applicants, score them all at once, and download results.
 
 **How it works under the hood:**  
-The dashboard retrains the same three model families on a synthetic dataset that mirrors the original credit statistics. It applies identical preprocessing (one‑hot encoding, scaling) and uses the same cost‑based evaluation. The default active model is the one that minimises **cost‑weighted misclassification** (5×FN + 1×FP) on the dashboard’s internal test set – which, consistent with the notebook, is **Logistic Regression**.
+The dashboard re-trains the same three model families on a synthetic dataset that mirrors the original credit statistics. It applies identical preprocessing (one‑hot encoding, scaling) and uses the same cost‑based evaluation. The default active model is the one that minimises **cost‑weighted misclassification** (5×FN + 1×FP) on the dashboard’s internal test set – which, consistent with the notebook, is **Logistic Regression**.
 
 **References**
 **Dataset**
